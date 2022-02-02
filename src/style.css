@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap');
+#scrollUp {
+    @apply  fixed right-5 bottom-5 block w-10 h-10 leading-9 text-white text-2xl text-center rounded-md z-50 no-underline transition bg-bg-two 
+}
+.secondary-btn {
+    @apply  inline-block border-0 shadow-none font-nsa text-[18px] font-bold capitalize bg-primary text-white rounded px-[25px] py-[16px] transition 
+}
+.primary-btn {
+    @apply  inline-block border-0 shadow-none font-nsa text-[18px] font-bold capitalize bg-color-one text-white rounded px-[25px] py-[16px] transition 
+}

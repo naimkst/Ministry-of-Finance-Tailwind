@@ -13,6 +13,12 @@
       animation: 'fade'
     }); 
     /*-------------------------------------------
+    mobile header 
+    --------------------------------------------- */
+    $('button.mobile-menu-button').on('click', function() {
+      $('.mobile-menu').toggleClass('hidden');
+    });
+    /*-------------------------------------------
     hero-slider active
     --------------------------------------------- */
     $('.hero-slider').slick({

@@ -72,9 +72,9 @@
     <header class="bg-white py-2 sticky top-0 z-[101]">
         <div class="container px-[15px] mx-auto flex justify-between items-center">
             <a href="index.html"><img src="public/assets/images/logo.png" alt="logo" /></a>
-            <nav>
+            <nav class="hidden lg:block">
                 <ul class="flex justify-end gap-3 xl:gap-x-6 text-[14px] xl:text-[16px] font-nsa text-bcolor font-semibold ">
-                    <li><a href="#" class="text-primary transition duration-100 hover:text-primary">About the Ministry</a></li>
+                    <li><a href="about.html" class="text-primary transition duration-100 hover:text-primary">About the Ministry</a></li>
                     <li><a href="#" class="transition duration-100 hover:text-primary">Public Budget</a></li>
                     <li><a href="#" class="transition duration-100 hover:text-primary">Financial Reports</a></li>
                     <li><a href="#" class="transition duration-100 hover:text-primary">General Supplies</a></li>
@@ -83,6 +83,26 @@
                     <li><a href="#" class="transition duration-100 hover:text-primary">Call Us</a></li>
                 </ul>
             </nav>
+            <div class="lg:hidden flex items-center">
+                <button class="mobile-menu-button">
+                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu pt-[25px] hidden lg:hidden">
+            <div class="container px-[15px] mx-auto ">
+                <ul>
+                    <li class="mb-2"><a href="about.html" class="text-primary transition duration-100 hover:text-primary">About the Ministry</a></li>
+                    <li class="mb-2"><a href="#" class="transition duration-100 hover:text-primary">Public Budget</a></li>
+                    <li class="mb-2"><a href="#" class="transition duration-100 hover:text-primary">Financial Reports</a></li>
+                    <li class="mb-2"><a href="#" class="transition duration-100 hover:text-primary">General Supplies</a></li>
+                    <li class="mb-2"><a href="#" class="transition duration-100 hover:text-primary">Electronic Services</a></li>
+                    <li class="mb-2"><a href="#" class="transition duration-100 hover:text-primary">news</a></li>
+                    <li class="mb-2"><a href="#" class="transition duration-100 hover:text-primary">Call Us</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="hero-area relative">
@@ -257,60 +277,60 @@
                 <p class="text-[16px] md:text-[18px] leading-[24px] text-black">Electronic services provided by the Ministry of Finance in cooperation with various departments</p>
             </div>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-                <div class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)]">
-                    <div class="xl:mr-5 mr-3 transition group-hover:scale-125">
-                        <i class="flaticon-hand text-[35px] xl:text-[50px] leading-none text-primary"></i>
+                <a href="#" class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)] hover:scale-105 hover:bg-primary">
+                    <div class="xl:mr-5 mr-3 transition">
+                        <i class="flaticon-hand text-[35px] xl:text-[50px] leading-none text-primary group-hover:text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize">Payroll service</h3>
-                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
+                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize group-hover:text-white">Payroll service</h3>
+                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins group-hover:text-white">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
                     </div>
-                </div>
-                <div class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)]">
-                    <div class="xl:mr-5 mr-3 transition group-hover:scale-125">
-                        <i class="flaticon-taxes text-[35px] xl:text-[50px] leading-none text-primary"></i>
-                    </div>
-                    <div class="flex-1">
-                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize">Tax service</h3>
-                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
-                    </div>
-                </div>
-                <div class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)]">
-                    <div class="xl:mr-5 mr-3 transition group-hover:scale-125">
-                        <i class="flaticon-officer text-[35px] xl:text-[50px] leading-none text-primary"></i>
+                </a>
+                <a href="#" class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)] hover:scale-105 hover:bg-primary">
+                    <div class="xl:mr-5 mr-3 transition">
+                        <i class="flaticon-taxes text-[35px] xl:text-[50px] leading-none text-primary group-hover:text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize">Customs and excise</h3>
-                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
+                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize group-hover:text-white">Tax service</h3>
+                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins group-hover:text-white">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
                     </div>
-                </div>
-                <div class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)]">
-                    <div class="xl:mr-5 mr-3 transition group-hover:scale-125">
-                        <i class="flaticon-property text-[35px] xl:text-[50px] leading-none text-primary"></i>
-                    </div>
-                    <div class="flex-1">
-                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize">Property taxes</h3>
-                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
-                    </div>
-                </div>
-                <div class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)]">
-                    <div class="xl:mr-5 mr-3 transition group-hover:scale-125">
-                        <i class="flaticon-fuel-pump text-[35px] xl:text-[50px] leading-none text-primary"></i>
+                </a>
+                <a href="#" class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)] hover:scale-105 hover:bg-primary">
+                    <div class="xl:mr-5 mr-3 transition">
+                        <i class="flaticon-officer text-[35px] xl:text-[50px] leading-none text-primary group-hover:text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize">Fuel prices</h3>
-                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
+                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize group-hover:text-white">Customs and excise</h3>
+                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins group-hover:text-white">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
                     </div>
-                </div>
-                <div class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)]">
-                    <div class="xl:mr-5 mr-3 transition group-hover:scale-125">
-                        <i class="flaticon-document text-[35px] xl:text-[50px] leading-none text-primary"></i>
+                </a>
+                <a href="#" class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)] hover:scale-105 hover:bg-primary">
+                    <div class="xl:mr-5 mr-3 transition">
+                        <i class="flaticon-property text-[35px] xl:text-[50px] leading-none text-primary group-hover:text-white"></i>
                     </div>
                     <div class="flex-1">
-                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize">General inquiries</h3>
-                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
+                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize group-hover:text-white">Property taxes</h3>
+                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins group-hover:text-white ">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
                     </div>
-                </div>
+                </a>
+                <a href="#" class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)] hover:scale-105 hover:bg-primary">
+                    <div class="xl:mr-5 mr-3 transition">
+                        <i class="flaticon-fuel-pump text-[35px] xl:text-[50px] leading-none text-primary group-hover:text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize group-hover:text-white">Fuel prices</h3>
+                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins group-hover:text-white">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
+                    </div>
+                </a>
+                <a href="#" class="group flex px-4 py-6 rounded bg-white transition hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.07)] hover:scale-105 hover:bg-primary">
+                    <div class="xl:mr-5 mr-3 transition">
+                        <i class="flaticon-document text-[35px] xl:text-[50px] leading-none text-primary group-hover:text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-[20px] xl:text-[24px] font-nsa font-bold text-color-one mb-[10px] capitalize group-hover:text-white">General inquiries</h3>
+                        <p class="text-[16px] leading-[24px] text-bcolor font-poppins group-hover:text-white">Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning sophisticated.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -430,6 +450,7 @@
         </div>
     </footer>
     <!-- js file start here  -->
+    <script src="public/assets/js/alpine.js"></script>
     <script src="public/assets/js/jquery-3.6.0.min.js"></script>
     <script src="public/assets/js/plugins.js"></script>
     <script src="public/assets/js/main.js"></script>

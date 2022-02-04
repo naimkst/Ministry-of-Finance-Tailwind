@@ -9,6 +9,7 @@ module.exports = {
   "financial-reports.html",
   "general-supplies.html",
   "single-directorates.html",
+  "news.html",
 ],
   theme: {
     extend: {},

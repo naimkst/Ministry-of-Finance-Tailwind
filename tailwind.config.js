@@ -3,7 +3,12 @@ module.exports = {
   "./src/**/*.{html,js}", 
   "index.html", 
   "about.html",
-  "public-budget.html"
+  "public-budget.html",
+  "electronic-services.html",
+  "single-electronic-services.html",
+  "financial-reports.html",
+  "general-supplies.html",
+  "single-directorates.html",
 ],
   theme: {
     extend: {},

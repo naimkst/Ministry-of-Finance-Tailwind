@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mof Responsive  HTML5 Template</title>
+    <meta name="description" content="Mof Responsive  HTML5 Template " />
+    <meta name="keywords" content="business,corporate, creative, woocommerach, design, gallery, minimal, modern, landing page, cv, designer, freelancer, html, one page, personal, portfolio, programmer, responsive, nft, p2p, vcard, one page" />
+    <meta name="author" content="Mof" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="public/assets/css/flaticon.css" />
+    <link rel="stylesheet" href="public/assets/css/plugins.css" />
+    <link href="public/style.css" rel="stylesheet" />
+</head>
+<body class="font-poppins bg-body-bg">
+    <div class="bg-color-one py-5 hidden sm:block">
+        <div class="container px-[15px] px-[15px] mx-auto columns-2">
+            <p class="text-[16px] font-nsa text-white m-0"><i class="text-primary mr-1 far fa-clock"></i> Wednesday 1/9/2021</p>
+            <ul class="flex justify-end	gap-4">
+                <li><a href="#"><img src="public/assets/images/instagram.svg" alt="instagram" /></a></li>
+                <li><a href="#"><img src="public/assets/images/facebook.svg" alt="facebook" /></a></li>
+                <li><a href="#"><img src="public/assets/images/search.svg" alt="search" /></a></li>
+                <li><a href="#"><img src="public/assets/images/power.svg" alt="power" /></a></li>
+                <li><a href="#"><img src="public/assets/images/aal.svg" alt="aal" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="bg-white py-2 sticky top-0 z-[101]">
+        <div class="container px-[15px] px-[15px] mx-auto flex justify-between items-center">
+            <a href="index.html"><img src="public/assets/images/logo.png" alt="logo" /></a>
+            <nav class="hidden lg:block">
+                <ul class="flex justify-end gap-3 xl:gap-x-6 text-[14px] xl:text-[16px] font-nsa text-bcolor font-semibold ">
+                    <li><a href="about.html" class="transition duration-100 hover:text-primary">About the Ministry</a></li>
+                    <li><a href="public-budget.html" class="transition duration-100 hover:text-primary">Public Budget</a></li>
+                    <li><a href="financial-reports.html" class="text-primary transition duration-100 hover:text-primary">Financial Reports</a></li>
+                    <li><a href="general-supplies.html" class="transition duration-100 hover:text-primary">General Supplies</a></li>
+                    <li><a href="electronic-services.html" class="transition duration-100 hover:text-primary">Electronic Services</a></li>
+                    <li><a href="news.html" class="transition duration-100 hover:text-primary">news</a></li>
+                    <li><a href="contact.html" class="transition duration-100 hover:text-primary">Call Us</a></li>
+                </ul>
+            </nav>
+            <div class="lg:hidden flex items-center">
+                <button class="mobile-menu-button">
+                  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu pt-[25px] hidden lg:hidden">
+            <div class="container px-[15px] px-[15px] mx-auto ">
+                <ul>
+                    <li class="mb-2.5"><a href="about.html" class="transition font-medium duration-100 hover:text-primary">About the Ministry</a></li>
+                    <li class="mb-2.5"><a href="public-budget.html" class="transition font-medium duration-100 hover:text-primary">Public Budget</a></li>
+                    <li class="mb-2.5"><a href="financial-reports.html" class="text-primary transition font-medium duration-100 hover:text-primary">Financial Reports</a></li>
+                    <li class="mb-2.5"><a href="general-supplies.html" class="transition font-medium duration-100 hover:text-primary">General Supplies</a></li>
+                    <li class="mb-2.5"><a href="electronic-services.html" class="transition font-medium duration-100 hover:text-primary">Electronic Services</a></li>
+                    <li class="mb-2.5"><a href="news.html" class="transition font-medium duration-100 hover:text-primary">news</a></li>
+                    <li class="mb-2.5"><a href="contact.html" class="transition font-medium duration-100 hover:text-primary">Call Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="page-title-area bg-bg-one py-11">
+        <div class="container px-[15px] mx-auto">
+            <h2 class="relative font-nsa text-[32px] sm:text-[50px] leading-[42px] sm:leading-[65px] font-bold pl-[25px] text-white before:absolute before:bg-primary before:content before:w-2 before:h-full before:left-0 before:rounded">General Budget</h2>
+        </div>
+    </div>
+    <div class="container px-[15px] mx-auto py-[80px]">
+        <nav class="w-full mb-8">
+            <ul class="list-reset flex text-color-one capitalize font-nsa font-medium text-[16px] lg:text-[20px]">
+              <li><a href="#" class="text-blue-600 hover:text-blue-700">Home</a></li>
+              <li><span class="text-gray-500 mx-2">/</span></li>
+              <li><a href="#" class="text-blue-600 hover:text-blue-700">Financial Reports</a></li>
+              <li><span class="text-gray-500 mx-2">/</span></li>
+              <li class="text-primary">Monthly Reports</li>
+            </ul>
+        </nav>
+        <div x-data="{tab:'MonthlyReports'}">
+            <div class="flex flex-wrap">
+                <div class="w-full mb-[30px] md:m-0 md:w-1/3 lg:w-1/4" >
+                    <h3 class="bg-bg-one text-[18px] lg:text-[24px] font-semibold capitalize text-white px-5 py-4">Financial Reports</h3>
+                    <div class="bg-bg-two py-2">
+                       <a href="#" @click.prevent="tab = 'MonthlyReports'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='MonthlyReports'}">Monthly Reports</a>
+                       <a href="#" @click.prevent="tab = 'QuarterlyReports'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='QuarterlyReports'}">Quarterly Reports</a>
+                       <a href="#" @click.prevent="tab = 'AnnualReports'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='AnnualReports'}">Annual reports</a>
+                       <a href="#" @click.prevent="tab = 'IncomeTax'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='IncomeTax'}">Income tax</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 lg:w-3/4 md:pl-5">
+                    <div x-show="tab === 'MonthlyReports'" >
+                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-5">Budget preparation calender</h2>
+                        <div class="block" x-data="{selected:1}">
+                            <ul class="block">
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 1 ? selected = 1 : selected = null">
+                                        <span>Monthly financial reports for the year 2021, financial operations - revenues, expenditures and funding sources</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">December4</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">November</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">October</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">September</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">August</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">July</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">June</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 2 ? selected = 2 : selected = null">
+                                        <span>Monthly financial reports for the year 2020, financial operations - revenues, expenditures and funding sources</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">December4</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">November</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">October</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">September</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">August</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">July</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">June</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 3 ? selected = 3 : selected = null">
+                                        <span> Monthly financial reports for the year 2019, financial operations - revenues, expenditures and funding sources</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">December4</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">November</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">October</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">September</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">August</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">July</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">June</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 4 ? selected = 4 : selected = null">
+                                        <span> Monthly Financial Reports for 2018, Financial Operations - Revenues, Expenditures and Funding Sources</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">December4</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">November</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">October</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">September</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">August</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">July</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">June</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div x-show="tab === 'QuarterlyReports'">
+                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-5">Quarterly Reports</h2>
+                        <div class="block" x-data="{selected:1}">
+                            <ul class="block">
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 1 ? selected = 1 : selected = null">
+                                        <span>Quarterly Reports 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 2 ? selected = 2 : selected = null">
+                                        <span>Quarterly Reports 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 3 ? selected = 3 : selected = null">
+                                        <span> Quarterly Reports 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 4 ? selected = 4 : selected = null">
+                                        <span> Quarterly Reports 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div x-show="tab === 'AnnualReports'">
+                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-5">Annual reports</h2>
+                        <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2021</a>
+                            </li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2020</a>
+                            </li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2020</a>
+                            </li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2020</a>
+                            </li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2020</a>
+                            </li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2020</a>
+                            </li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                <a href="#" class="break-all transition hover:text-[#53BFFC]">General government data 2020</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div x-show="tab === 'IncomeTax'">
+                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-5">Income tax</h2>
+                        <div class="block" x-data="{selected:1}">
+                            <ul class="block">
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 1 ? selected = 1 : selected = null">
+                                        <span>Income Tax Reports for 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container1" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 2 ? selected = 2 : selected = null">
+                                        <span>Income Tax Reports for 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container2" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 3 ? selected = 3 : selected = null">
+                                        <span> Income Tax Reports for 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="relative">
+                                    <button type="button" class="block mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1" @click="selected !== 4 ? selected = 4 : selected = null">
+                                        <span> Income Tax Reports for 2021</span>
+                                    </button>
+                                    <div class="relative overflow-hidden transition-all max-h-0 duration-700"  x-ref="container3" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                        <ul class="font-poppins text-[18px] leading-6 text-bcolor p-5 pb-2 bg-white rounded-xl mb-5">
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">Second Quarter</a>
+                                            </li>
+                                            <li class="mb-3 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">
+                                                <a href="#" class="break-all transition hover:text-[#53BFFC]">First Quarter</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-color-one">
+        <div class="py-5 border-b border-solid border-[#7A7A7A]">
+            <div class="container px-[15px] px-[15px] mx-auto">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-3/4 mb-[25px] lg:mb-0">
+                        <nav>
+                            <ul class="flex flex-wrap text-[16px] font-nsa text-white font-medium justify-center lg:justify-start">
+                                <li class="mx-2 my-1"><a href="#" class="text-primary transition duration-100 hover:text-primary">About the Ministry</a></li>
+                                <li class="mx-2 my-1"><a href="#" class="transition duration-100 hover:text-primary">Public Budget</a></li>
+                                <li class="mx-2 my-1"><a href="#" class="transition duration-100 hover:text-primary">Financial Reports</a></li>
+                                <li class="mx-2 my-1"><a href="#" class="transition duration-100 hover:text-primary">General Supplies</a></li>
+                                <li class="mx-2 my-1"><a href="#" class="transition duration-100 hover:text-primary">Electronic Services</a></li>
+                                <li class="mx-2 my-1"><a href="#" class="transition duration-100 hover:text-primary">news</a></li>
+                                <li class="mx-2 my-1"><a href="#" class="transition duration-100 hover:text-primary">Call Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="w-full lg:w-1/4 self-center">
+                        <ul class="flex justify-center lg:justify-end	gap-4">
+                            <li><a href="#"><img src="public/assets/images/instagram.svg" alt="instagram" /></a></li>
+                            <li><a href="#"><img src="public/assets/images/facebook.svg" alt="facebook" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-8 text-white">
+            <div class="container px-[15px] px-[15px] mx-auto ">
+                <div class="flex flex-wrap">
+                    <div class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-full mb-5">
+                        <a href="index.html" class="mb-5 block">
+                            <img src="public/assets/images/white-logo.png" alt="logo" />
+                        </a>
+                        <h4 class="font-nsa text-[18px] font-bold text-bcolor mb-2">Al-Masayef, Ramallah - Palestine </h4>
+                        <ul class="font-nsa text-[16px] font-normal text-bcolor leading-normal">
+                            <li class="mb-2"><span class="block text-white font-bold mr-1">Working hours:</span> Sunday - Thursday 9 am - 3 pm</li>
+                            <li class="mb-2"><span class="text-white font-bold mr-1">Tel:</span> 022978770</li>
+                            <li><span class="text-white font-bold mr-1">Email:</span> info@mof.ps</li>
+                        </ul>
+                    </div>
+                    <div class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-full mb-5">
+                        <h3 class="text-[24px] font-nsa font-bold capitalize text-white mb-4">Quick links</h3>
+                        <ul class="text-[18px] font-nsa font-medium capitalize text-white">
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Salary Slip</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Tax Portal</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Customs (Asycuda)</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Income Tax</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Value Added Tax</a></li>
+                            <li><a href="#" class="transition-all hover:text-primary">Fuel Prices</a></li>
+                        </ul>
+                    </div>
+                    <div class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-full mb-5">
+                        <h3 class="text-[24px] font-nsa font-bold capitalize text-white mb-4">Affiliate Sites</h3>
+                        <ul class="text-[18px] font-nsa font-medium capitalize text-white">
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Chair Office</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Parliment</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Ministry Of National Economy</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Monetary Authority</a></li>
+                            <li class="mb-1.5"><a href="#" class="transition-all hover:text-primary">Council Of Ministers</a></li>
+                            <li><a href="#" class="transition-all hover:text-primary">Ministry Of Interior Affairs</a></li>
+                        </ul>
+                    </div>
+                    <div class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-full mb-5">
+                        <h3 class="text-[24px] font-nsa font-bold capitalize text-white mb-4">Keep In Touch</h3>
+                        <p class="mb-5">Subscribe to our mailing list to stay in touch with the latest news and events</p>
+                        <form action="#">
+                            <div class="relative">
+                                <input type="email" class="w-full border border-solid border-bcolor h-[60px] p-2 pr-[140px] md:p-3 font-nsa font-normal text-[14px] md:text-[18px] bg-transparent text-white rounded box-border shadow-none focus:outline-0 focus:shadow-none" id="newsletter" name="newsletter" placeholder="Your mail">
+                                <button type="submit" class="absolute right-0 top-[50%] translate-y-[-50%] secondary-btn hover:bg-hover text-white">subscrive</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-color-two py-5">
+            <div class="container px-[15px] px-[15px] mx-auto">
+                <p class="text-center text-white font-nsa font-medium text-[16px]">All rights reserved.  2022    Ministry of Finance - State of Palestine </p>
+            </div>
+        </div>
+    </footer>
+    <!-- js file start here  -->
+    <script src="public/assets/js/alpine.js"></script>
+    <script src="public/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="public/assets/js/plugins.js"></script>
+    <script src="public/assets/js/main.js"></script>
+</body>
+</html>

@@ -10,6 +10,8 @@ module.exports = {
   "general-supplies.html",
   "single-directorates.html",
   "news.html",
+  "contact.html",
+  "forms-publications.html",
 ],
   theme: {
     extend: {},

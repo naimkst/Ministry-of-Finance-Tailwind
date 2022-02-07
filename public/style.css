@@ -662,6 +662,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 60px;
 }
 
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[20\] {
+  margin-left: 20;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1024,6 +1036,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.pl-\[80px\] {
+  padding-left: 80px;
+}
+
+.pl-\[\] {
+  padding-left: ;
+}
+
+.pl-\[60px\] {
+  padding-left: 60px;
+}
+
+.pl-\[40px\] {
+  padding-left: 40px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1269,6 +1297,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0.25rem;
 }
 
+.before\:top-\[5px\]::before {
+  content: var(--tw-content);
+  top: 5px;
+}
+
+.before\:top-\[8px\]::before {
+  content: var(--tw-content);
+  top: 8px;
+}
+
+.before\:top-\[50\%\]::before {
+  content: var(--tw-content);
+  top: 50%;
+}
+
+.before\:top-\[\]::before {
+  content: var(--tw-content);
+  top: ;
+}
+
+.before\:top-\[15px\]::before {
+  content: var(--tw-content);
+  top: 15px;
+}
+
+.before\:top-\[12px\]::before {
+  content: var(--tw-content);
+  top: 12px;
+}
+
+.before\:top-\[1px\]::before {
+  content: var(--tw-content);
+  top: 1px;
+}
+
+.before\:top-\[10px\]::before {
+  content: var(--tw-content);
+  top: 10px;
+}
+
 .before\:z-20::before {
   content: var(--tw-content);
   z-index: 20;
@@ -1289,6 +1357,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.before\:h-\[2px\]::before {
+  content: var(--tw-content);
+  height: 2px;
+}
+
+.before\:h-\[100\]::before {
+  content: var(--tw-content);
+  height: 100;
+}
+
+.before\:h-\[100\%\]::before {
+  content: var(--tw-content);
+  height: 100%;
+}
+
 .before\:w-2::before {
   content: var(--tw-content);
   width: 0.5rem;
@@ -1297,6 +1380,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
+}
+
+.before\:w-\[30px\]::before {
+  content: var(--tw-content);
+  width: 30px;
+}
+
+.before\:w-\[2px\]::before {
+  content: var(--tw-content);
+  width: 2px;
+}
+
+.before\:w-\[px\]::before {
+  content: var(--tw-content);
+  width: px;
 }
 
 .before\:rounded::before {
@@ -1315,6 +1413,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgba(0,0,0,0.5);
 }
 
+.before\:bg-bcolor::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 122 122 / var(--tw-bg-opacity));
+}
+
 .before\:opacity-0::before {
   content: var(--tw-content);
   opacity: 0;
@@ -1331,6 +1435,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .before\:content-\[\'\*\'\]::before {
   --tw-content: '*';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
   content: var(--tw-content);
 }
 

@@ -13,3 +13,9 @@
 .primary-btn {
     @apply  inline-block border-0 shadow-none font-nsa text-[18px] font-bold capitalize bg-color-one text-white rounded px-[25px] py-[16px] transition 
 }
+.tabs-content div:not(:first-child) {
+    @apply  hidden
+}
+.tabs-nav li.active a  {
+    @apply  text-primary
+}

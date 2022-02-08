@@ -28,7 +28,7 @@
     </div>
     <header class="bg-white py-2 sticky top-0 z-[101]">
         <div class="container px-[15px] mx-auto flex justify-between items-center">
-            <a href="index.html"><img src="public/assets/images/logo.png" alt="logo" /></a>
+            <a href="index.html" class="max-w-[150px] sm:max-w-[180px]"><img src="public/assets/images/logo.png" alt="logo" /></a>
             <nav class="hidden lg:block">
                 <ul class="flex justify-end gap-3 xl:gap-x-6 text-[14px] xl:text-[16px] font-nsa text-bcolor font-semibold ">
                     <li><a href="about.html" class="text-primary transition duration-100 hover:text-primary">About the Ministry</a></li>
@@ -62,14 +62,14 @@
             </div>
         </div>
     </header>
-    <div class="page-title-area bg-bg-one py-11">
+    <div class="page-title-area bg-bg-one py-6 md:py-11">
         <div class="container px-[15px] mx-auto">
-            <h2 class="relative font-nsa text-[32px] sm:text-[50px] leading-[42px] sm:leading-[65px] font-bold pl-[25px] text-white before:absolute before:bg-primary before:content before:w-2 before:h-full before:left-0 before:rounded">About the Ministry</h2>
+            <h2 class="relative font-nsa text-[32px] md:text-[50px] leading-[42px] md:leading-[65px] font-bold pl-[25px] text-white before:absolute before:bg-primary before:content before:w-2 before:h-full before:left-0 before:rounded">About the Ministry</h2>
         </div>
     </div>
-    <div class="container px-[15px] mx-auto py-[80px]">
+    <div class="container px-[15px] mx-auto py-[40px] md:py-[80px]">
         <nav class="w-full mb-8">
-            <ul class="list-reset flex text-color-one capitalize font-nsa font-medium text-[16px] lg:text-[20px]">
+            <ul class="list-reset flex flex-wrap text-color-one capitalize font-nsa font-medium text-[16px] lg:text-[20px]">
               <li><a href="#" class="text-blue-600 hover:text-blue-700">Home</a></li>
               <li><span class="text-gray-500 mx-2">/</span></li>
               <li><a href="#" class="text-blue-600 hover:text-blue-700">About the Ministry</a></li>
@@ -80,23 +80,23 @@
         <div x-data="{tab:'vision'}">
             <div class="flex flex-wrap">
                 <div class="w-full mb-[30px] md:m-0 md:w-1/3 lg:w-1/4" >
-                    <h3 class="bg-bg-one text-[18px] lg:text-[24px] font-semibold capitalize text-white px-5 py-4">About the Ministry</h3>
+                    <h3 class="bg-bg-one text-[18px] xl:text-[24px] font-semibold capitalize text-white px-5 py-4">About the Ministry</h3>
                     <div class="bg-bg-two py-2">
-                       <a href="#" @click.prevent="tab = 'vision'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='vision'}">Vision</a>
-                       <a href="#" @click.prevent="tab = 'brife'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='brife'}">Brife</a>
-                       <a href="#" @click.prevent="tab = 'hierarchy'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='hierarchy'}">Hierarchy</a>
-                       <a href="#" @click.prevent="tab = 'program'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='program'}">Program</a>
-                       <a href="#" @click.prevent="tab = 'whatdo'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='whatdo'}">What we do</a>
-                       <a href="#" @click.prevent="tab = 'strategicgoals'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] lg:text-[20px]" :class="{'text-primary':tab==='strategicgoals'}">Strategic Goals</a>
+                       <a href="#" @click.prevent="tab = 'vision'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='vision'}">Vision</a>
+                       <a href="#" @click.prevent="tab = 'brife'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='brife'}">Brife</a>
+                       <a href="#" @click.prevent="tab = 'hierarchy'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='hierarchy'}">Hierarchy</a>
+                       <a href="#" @click.prevent="tab = 'program'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='program'}">Program</a>
+                       <a href="#" @click.prevent="tab = 'whatdo'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='whatdo'}">What we do</a>
+                       <a href="#" @click.prevent="tab = 'strategicgoals'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='strategicgoals'}">Strategic Goals</a>
                     </div>
                 </div>
                 <div class="w-full md:w-2/3 lg:w-3/4 md:pl-5">
                     <div x-show="tab === 'vision'" >
                         <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 ">
                             <div>
-                                <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-4">Vision</h2>
-                                <p class="text-[18px] landscape-[24px] text-bcolor font-poppins font-normal mb-5">Contribute to the stability and growth of the national economy to reach prosperity through sustainable development and provide a decent life for citizens</p>
-                                <p class="text-[18px] landscape-[24px] text-bcolor font-poppins font-normal">Contribute to the stability and growth of the national economy to reach prosperity through sustainable development and provide a decent life for citizens</p>
+                                <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-4">Vision</h2>
+                                <p class="text-[16px] md:text-[18px] landscape-[24px] text-bcolor font-poppins font-normal mb-5">Contribute to the stability and growth of the national economy to reach prosperity through sustainable development and provide a decent life for citizens</p>
+                                <p class="text-[16px] md:text-[18px] landscape-[24px] text-bcolor font-poppins font-normal">Contribute to the stability and growth of the national economy to reach prosperity through sustainable development and provide a decent life for citizens</p>
                             </div>
                             <div>
                                 <img class="border-4 border-[#08173D] rounded-md w-full" src="public/assets/images/tab-image.jpg" alt="tab image" />
@@ -106,8 +106,8 @@
                     <div x-show="tab === 'brife'">
                         <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
                             <div>
-                                <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-4">Brife</h2>
-                                <p class="text-[18px] landscape-[24px] text-bcolor font-poppins font-normal mb-5">The Ministry of Finance plays a key role in drawing up the financial policy of the Palestinian National Authority and supervising its implementation in a manner that ensures an effective contribution to achieving integration between economic, financial and monetary policies and achieving consistency between its tools to form a system for economic stability and growth, which contributes to achieving sustainable development goals and raising the standard of living in all fields. In support of the strength and consolidation of the national economy in the face of the great challenges it faces at the local and external levels, it also works to finance the budget of the Palestinian National Authority through local revenues generated from taxes, manage revenues from external funding sources, and carry out the work and responsibilities entrusted to it through an action plan in support of the reform plan and Palestinian development, within a transparent approach that seeks to reach sustainable development</p>
+                                <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-4">Brife</h2>
+                                <p class="text-[16px] md:text-[18px] landscape-[24px] text-bcolor font-poppins font-normal mb-5">The Ministry of Finance plays a key role in drawing up the financial policy of the Palestinian National Authority and supervising its implementation in a manner that ensures an effective contribution to achieving integration between economic, financial and monetary policies and achieving consistency between its tools to form a system for economic stability and growth, which contributes to achieving sustainable development goals and raising the standard of living in all fields. In support of the strength and consolidation of the national economy in the face of the great challenges it faces at the local and external levels, it also works to finance the budget of the Palestinian National Authority through local revenues generated from taxes, manage revenues from external funding sources, and carry out the work and responsibilities entrusted to it through an action plan in support of the reform plan and Palestinian development, within a transparent approach that seeks to reach sustainable development</p>
                             </div>
                             <div>
                                 <img class="border-4 border-[#08173D] rounded-md w-full" src="public/assets/images/tab-image.jpg" alt="tab image" />
@@ -117,7 +117,7 @@
                     <div x-show="tab === 'hierarchy'">
                         <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
                             <div>
-                                <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-4">Hierarchy</h2>
+                                <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-4">Hierarchy</h2>
                                 <ul class="font-poppins text-[16px] font-medium text-bcolor">
                                     <li class="mb-3 "><a href="#" class="break-all transition hover:text-[#53BFFC]">http://www.pmof.ps/pmof/images/aboutMinistry/structure.pdf</a></li>
                                     <li class="mb-3 "><a href="#" class="break-all transition hover:text-[#53BFFC]">http://www.pmof.ps/pmof/images/aboutMinistry/structure.pdf</a></li>
@@ -131,9 +131,9 @@
                         </div>
                     </div>
                     <div x-show="tab === 'program'">
-                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-2">Program</h2>
+                        <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-2">Program</h2>
                         <h4 class="text-color-one text-[18px] leading-6 font-normal font-poppins mb-6">To achieve its objectives, the Ministry of Finance has approved five medium-term programs</h4>
-                        <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                        <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                             <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Developing revenue management and activating the collection system.</li>
                             <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Public expenditure management development.</li>
                             <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Developing financial control and internal auditing.</li>
@@ -142,10 +142,10 @@
                         </ul>
                     </div>
                     <div x-show="tab === 'whatdo'">
-                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-2">What we do</h2>
+                        <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-2">What we do</h2>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Drawing financial policies that support the achievement of the higher goals of the Palestinian National Authority</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Contribute to achieving the government's strategic goals set out in the reform and development plan</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Studying and analyzing the financial, monetary and economic conditions and evaluating tax policies and procedures in coordination with all concerned authorities</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Financial planning based on financial studies and analysis, which provides accurate cash flow forecasts</li>
@@ -155,7 +155,7 @@
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Preparing and implementing the budget and developing the means for its preparation</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Preparing the general budget of the Palestinian National Authority and the budgets of the institutions, and developing the means for their preparation</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Enhancing the performance of the budget, and using it as a tool for monitoring and measuring performance in addition to being a tool for planning and distributing financial resources.</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Trade-off between competing demands for spending</li>
@@ -164,21 +164,21 @@
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Collection and development of revenue from taxes and customs</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Follow-up on the verification of tax revenues from customs, excise, income tax and added tax, collecting them and providing and facilitating the provision of related services to citizens by the concerned departments</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Consolidation of tax information through an accounting program and a single database to keep the accounts and records of taxpayers</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Property tax collection on behalf of municipalities and local councils</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Follow up on the verification, development and collection of property tax and its remittance to municipalities and village councils to assist them in carrying out their duties and duties towards citizens</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Developing systems for the work of property tax departments, and facilitating the provision of services to citizens</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Managing and increasing grants to the authority</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Conducting contacts and follow-up with donors, to achieve the highest percentage of grants provided to support development projects and support the general budget.</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Directing grants to the consolidated treasury account.</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Record and publish all grants in the financial records of the Palestinian Authority</li>
@@ -186,13 +186,13 @@
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Computerization of work in taxes</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Work to unify all tax systems and data through a unified program PATACS used by all tax revenue departments, in order to achieve linking tax data and provide integrated information, which contributes to raising the efficiency and effectiveness of work and achieve independence from any external programs</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Cash management, bookkeeping and government debt</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing cash flows for the Palestinian National Authority</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing and regulating various sources of funding</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing the financial assets of the Palestinian National Authority</li>
@@ -205,7 +205,7 @@
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Public Expenditure Management</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Supervising the disbursement of capital, operating and development general expenditures</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Continuing the process of reforming the financial system, developing accounting programs, linking and unifying them, and setting up a new structure for them</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Connect all responsibility centers through a unified and secure computer network</li>
@@ -214,13 +214,13 @@
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Government property management</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Ensuring the preservation of the properties of the Palestinian Authority, the registration of state property and its components represented in government buildings, headquarters, grants, in-kind aid, government vehicles and other government property, and computerizing the records related to them</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6">Providing government supplies and purchases</h4>
-                            <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                            <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Drawing up the general policy for the management of public supplies and the means of implementing this policy</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Purchasing supplies in accordance with the law by following the principle of competition and quality in terms of goods and services</li>
                                 <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Save supplies and manage their surplus</li>
@@ -231,9 +231,9 @@
                         </div>
                     </div>
                     <div x-show="tab === 'strategicgoals'">
-                        <h2 class="text-color-one text-[32px] font-semibold font-nsa capitalize mb-2">Strategic Goals</h2>
+                        <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-2">Strategic Goals</h2>
                         <h4 class="text-color-one text-[18px] leading-6 font-normal font-poppins mb-6">Strategic objectives of the Ministry of Finance</h4>
-                        <ul class="font-poppins text-[18px] leading-6 text-bcolor">
+                        <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor">
                             <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Maximizing tax revenue collection, raising the level of services provided, and meeting needs</li>
                             <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Formulating comprehensive fiscal policy and managing public spending within a medium-term spending framework</li>
                             <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Develop mechanisms for preparing and implementing program and performance budgets accurately and effectively</li>
@@ -274,7 +274,7 @@
                 </div>
             </div>
         </div>
-        <div class="py-8 text-white">
+        <div class="py-5 md:py-8 text-white">
             <div class="container px-[15px] mx-auto ">
                 <div class="flex flex-wrap">
                     <div class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-full mb-5">

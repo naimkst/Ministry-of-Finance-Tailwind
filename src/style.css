@@ -19,3 +19,6 @@
 .tabs-nav li.active a  {
     @apply  text-primary
 }
+.dark {
+    @apply  bg-[#2D395A]
+}

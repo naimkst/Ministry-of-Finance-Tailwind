@@ -733,10 +733,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 45px;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
@@ -759,10 +755,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-\[100px\] {
@@ -1620,6 +1612,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(8 23 61 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-bg-two {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 29 92 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-\[rgba\(8\2c 23\2c 61\2c 0\.75\)\] {
   background-color: rgba(8,23,61,0.75);
 }
@@ -1627,25 +1624,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:bg-\[\#233052\] {
   --tw-bg-opacity: 1;
   background-color: rgb(35 48 82 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-transparent {
-  background-color: transparent;
-}
-
-.dark .dark\:bg-bcolor {
-  --tw-bg-opacity: 1;
-  background-color: rgb(122 122 122 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-bg-one {
-  --tw-bg-opacity: 1;
-  background-color: rgb(8 23 61 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-bg-two {
-  --tw-bg-opacity: 1;
-  background-color: rgb(4 29 92 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-white {

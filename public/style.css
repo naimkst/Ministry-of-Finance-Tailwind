@@ -534,6 +534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 10px;
 }
 
+.top-\[120\%\] {
+  top: 120%;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -579,6 +583,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .ml-1 {
@@ -659,10 +667,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-1\.5 {
   margin-bottom: 0.375rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 
 .mb-8 {
@@ -757,6 +761,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-\[160px\] {
+  width: 160px;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -767,6 +775,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-w-\[200px\] {
   min-width: 200px;
+}
+
+.max-w-\[25px\] {
+  max-width: 25px;
 }
 
 .max-w-\[150px\] {
@@ -851,10 +863,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 
 .self-center {
@@ -981,6 +992,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
@@ -1166,12 +1182,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 26px;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .font-bold {
@@ -1523,6 +1539,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(209 177 41 / var(--tw-text-opacity));
 }
 
+.hover\:text-hover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(244 202 20 / var(--tw-text-opacity));
+}
+
 .hover\:text-\[\#53BFFC\]:hover {
   --tw-text-opacity: 1;
   color: rgb(83 191 252 / var(--tw-text-opacity));
@@ -1597,6 +1618,93 @@ Ensure the default browser behavior of the `hidden` attribute.
 .group:hover .group-hover\:before\:opacity-100::before {
   content: var(--tw-content);
   opacity: 1;
+}
+
+[dir="rtl"] .rtl\:right-auto {
+  right: auto;
+}
+
+[dir="rtl"] .rtl\:left-0 {
+  left: 0px;
+}
+
+[dir="rtl"] .rtl\:left-\[10px\] {
+  left: 10px;
+}
+
+[dir="rtl"] .rtl\:float-left {
+  float: left;
+}
+
+[dir="rtl"] .rtl\:ml-1 {
+  margin-left: 0.25rem;
+}
+
+[dir="rtl"] .rtl\:ml-0 {
+  margin-left: 0px;
+}
+
+[dir="rtl"] .rtl\:mr-1 {
+  margin-right: 0.25rem;
+}
+
+[dir="rtl"] .rtl\:mr-0 {
+  margin-right: 0px;
+}
+
+[dir="rtl"] .rtl\:ml-1\.5 {
+  margin-left: 0.375rem;
+}
+
+[dir="rtl"] .rtl\:ml-3 {
+  margin-left: 0.75rem;
+}
+
+[dir="rtl"] .rtl\:mr-0\.5 {
+  margin-right: 0.125rem;
+}
+
+[dir="rtl"] .rtl\:mr-3 {
+  margin-right: 0.75rem;
+}
+
+[dir="rtl"] .rtl\:mr-5 {
+  margin-right: 1.25rem;
+}
+
+[dir="rtl"] .rtl\:pl-0 {
+  padding-left: 0px;
+}
+
+[dir="rtl"] .rtl\:pr-\[25px\] {
+  padding-right: 25px;
+}
+
+[dir="rtl"] .rtl\:pr-\[140px\] {
+  padding-right: 140px;
+}
+
+[dir="rtl"] .rtl\:pr-5 {
+  padding-right: 1.25rem;
+}
+
+[dir="rtl"] .rtl\:pr-\[20px\] {
+  padding-right: 20px;
+}
+
+[dir="rtl"] .rtl\:before\:left-auto::before {
+  content: var(--tw-content);
+  left: auto;
+}
+
+[dir="rtl"] .rtl\:before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px;
+}
+
+[dir="rtl"] .rtl\:before\:ml-0::before {
+  content: var(--tw-content);
+  margin-left: 0px;
 }
 
 .dark .dark\:block {
@@ -1795,6 +1903,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     content: var(--tw-content);
     width: 30px;
   }
+
+  [dir="rtl"] .rtl\:md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  [dir="rtl"] .rtl\:md\:mr-5 {
+    margin-right: 1.25rem;
+  }
+
+  [dir="rtl"] .rtl\:md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  [dir="rtl"] .rtl\:md\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
+  [dir="rtl"] .rtl\:md\:pr-\[40px\] {
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1904,6 +2032,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  [dir="rtl"] .rtl\:xl\:mr-0 {
+    margin-right: 0px;
+  }
+
+  [dir="rtl"] .rtl\:xl\:ml-5 {
+    margin-left: 1.25rem;
   }
 }
 

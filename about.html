@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,30 +37,41 @@
     <div class="bg-color-one py-5 hidden sm:block">
         <div class="container px-[15px] mx-auto grid grid-cols-2 gap-4 items-center">
             <p class="text-[16px] font-nsa text-white m-0"><i class="text-primary mr-1 far fa-clock"></i> Wednesday 1/9/2021</p>
-            <ul class="flex justify-end	gap-4">
-                <li><a href="#"><img src="public/assets/images/instagram.svg" alt="instagram" /></a></li>
-                <li><a href="#"><img src="public/assets/images/facebook.svg" alt="facebook" /></a></li>
+            <ul class="flex justify-end	gap-4 items-center">
+                <li><a href="#" class="inline-block"><img class="max-w-[25px]" src="public/assets/images/instagram.svg" alt="instagram" /></a></li>
+                <li><a href="#" class="inline-block"><img class="max-w-[25px]" src="public/assets/images/facebook.svg" alt="facebook" /></a></li>
                 <li class="relative" x-data="{id: 1}">
-                    <button  @click="$dispatch('open-dropdown',{id})"><img src="public/assets/images/search.svg" alt="search" /></button>
-                    <div class="w-[280px] absolute right-0 top-[100%] z-[1026] p-1 bg-white rounded shadow-lg dark:bg-bg-two" x-data="{ open: false }"
+                    <button class="inline-block"  @click="$dispatch('open-dropdown',{id})"><img class="max-w-[25px]" src="public/assets/images/search.svg" alt="search" /></button>
+                    <div class="w-[280px] absolute right-0 rtl:right-auto rtl:left-0 top-[100%] z-[1026] p-1 bg-white rounded shadow-lg dark:bg-bg-two" x-data="{ open: false }"
                     x-show="open"
                     @open-dropdown.window="if ($event.detail.id == 1) open = true"
                     @click.away="open = false">
                         <form action="#">
                             <div class="relative">
-                                <input class="w-full h-[45px] p-[10px] rounded-none border  shadow-none focus:outline-none focus:shadow-none focus:border-primary" type="search" name="search" id="search" placeholder="search here ..." />
-                                <button class="absolute top-[50%] -translate-y-[50%] right-[10px] transition hover:text-primary"><i class="fas fa-search"></i></button>
+                                <input class="w-full h-[45px] p-[10px] rounded-none border shadow-none focus:outline-none focus:shadow-none focus:border-primary" type="search" name="search" id="search" placeholder="search here ..." />
+                                <button class="absolute top-[50%] -translate-y-[50%] right-[10px] rtl:right-auto rtl:left-[10px] transition hover:text-primary"><i class="fas fa-search"></i></button>
                             </div>
                         </form>
                     </div>
                 </li>
                 <li>
-                    <button  id="themeToggle">
-                        <img class="hidden dark:block" src="public/assets/images/power.svg" alt="power" />
-                        <img class="dark:hidden" src="public/assets/images/moon.svg" alt="power" />
+                    <button class="inline-block" id="themeToggle">
+                        <img class="max-w-[25px] hidden dark:block" src="public/assets/images/power.svg" alt="power" />
+                        <img class="max-w-[25px] dark:hidden" src="public/assets/images/moon.svg" alt="power" />
                     </button>
                 </li>
-                <li><a href="#"><img src="public/assets/images/aal.svg" alt="aal" /></a></li>
+                <li class="relative" x-data="{id: 3}">
+                    <button class="inline-block"  @click="$dispatch('open-dropdown',{id})"><img class="max-w-[25px] object-cover" src="public/assets/images/en.svg" alt="en" /></button>
+                    <div class=" w-[160px] absolute right-0 rtl:right-auto rtl:left-0 top-[120%] z-[1026] p-2 bg-white rounded shadow-lg dark:bg-bg-two" x-data="{ open: false }"
+                    x-show="open"
+                    @open-dropdown.window="if ($event.detail.id == 3) open = true"
+                    @click.away="open = false">
+                        <ul class="language-list text-[16px] font-medium capitalize text-bcolor">
+                            <li class="mb-1 last:mb-0"><a class="transition text-primary hover:text-hover" href="#">English</a></li>
+                            <li class="mb-1 last:mb-0"><a class="transition hover:text-hover" href="#">Arabic</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -73,7 +84,7 @@
             <nav class="hidden lg:block">
                 <ul class="flex justify-end gap-3 xl:gap-x-6 text-[14px] xl:text-[16px] capitalize font-nsa text-bcolor font-semibold dark:text-white">
                     <li class="group static">
-                        <a href="about.html" class="text-primary transition duration-100 py-[25px] dark:text-primary hover:text-primary dark:hover:text-primary ">About the Ministry <i class="ml-1 fas fa-angle-down"></i></a>
+                        <a href="about.html" class="text-primary transition duration-100 py-[25px] dark:text-primary hover:text-primary dark:hover:text-primary ">About the Ministry <i class="ml-1 rtl:ml-0 rtl:mr-1 fas fa-angle-down"></i></a>
                         <div class="grid grid-cols-3 gap-4 max-w-[1024px] mx-auto absolute top-[100%] left-0 right-0 bg-white px-7 py-7 rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible dark:bg-color-one">
                             <div class="single-menu-list">
                                 <h3 class="text-[16px] xl:text-[20px] capitalize font-nsa text-bcolor font-semibold mb-4 dark:text-white">mega menu title</h3>
@@ -126,7 +137,7 @@
                 <ul class="text-[16px] capitalize font-nsa text-bcolor font-semibold ">
                     <li class="mb-2.5" x-data="{id: 2}">
                         <a href="about.html" class="text-primary transition font-medium duration-100 dark:text-primary hover:text-primary dark:hover:text-primary ">About the Ministry </a>
-                        <i class="float-right mt-1 mr-1.5 fas fa-angle-down hover:cursor-pointer dark:text-white" @click="$dispatch('open-dropdown',{id})"></i>
+                        <i class="float-right mt-1 mr-1.5 fas fa-angle-down hover:cursor-pointer dark:text-white rtl:mr-0 rtl:ml-1.5 rtl:float-left" @click="$dispatch('open-dropdown',{id})"></i>
                         <div class="bg-white px-4 py-5 rounded-md shadow-md mt-2.5 dark:bg-color-one" x-data="{ open: false }" x-show="open" @open-dropdown.window="if ($event.detail.id == 2) open = true" @click.away="open = false">
                             <div class="single-menu-list mb-5 last:mb-0">
                                 <h3 class="text-[16px] xl:text-[20px] capitalize font-nsa text-bcolor font-semibold mb-3 dark:text-white">mega menu title</h3>
@@ -172,7 +183,7 @@
     </header>
     <div class="page-title-area bg-bg-one py-6 md:py-11">
         <div class="container px-[15px] mx-auto">
-            <h2 class="relative font-nsa text-[32px] md:text-[50px] leading-[42px] md:leading-[65px] font-bold pl-[25px] text-white before:absolute before:bg-primary before:content before:w-2 before:h-full before:left-0 before:rounded">About the Ministry</h2>
+            <h2 class="relative font-nsa text-[32px] md:text-[50px] leading-[42px] md:leading-[65px] font-bold pl-[25px] rtl:pl-0 rtl:pr-[25px] text-white before:absolute before:bg-primary before:content before:w-2 before:h-full before:left-0 rtl:before:left-auto rtl:before:right-0 before:rounded">About the Ministry</h2>
         </div>
     </div>
     <div class="container px-[15px] mx-auto py-[40px] md:py-[80px]">
@@ -198,7 +209,7 @@
                        <a href="#" @click.prevent="tab = 'strategicgoals'" class="block font-nsa font-medium capitalize px-5 py-2 text-white text-[16px] xl:text-[20px]" :class="{'text-primary':tab==='strategicgoals'}">Strategic Goals</a>
                     </div>
                 </div>
-                <div class="w-full md:w-2/3 lg:w-3/4 md:pl-5">
+                <div class="w-full md:w-2/3 lg:w-3/4 md:pl-5 rtl:md:pl-0 rtl:md:pr-5">
                     <div x-show="tab === 'vision'" >
                         <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 ">
                             <div>
@@ -242,11 +253,11 @@
                         <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-2 dark:text-white">Program</h2>
                         <h4 class="text-color-one text-[18px] leading-6 font-normal font-poppins mb-6 dark:text-white">To achieve its objectives, the Ministry of Finance has approved five medium-term programs</h4>
                         <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Developing revenue management and activating the collection system.</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Public expenditure management development.</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Developing financial control and internal auditing.</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Drawing financial policies, strategic planning, and developing financial regulations and legislation.</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Performance development and staff training</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Developing revenue management and activating the collection system.</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Public expenditure management development.</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Developing financial control and internal auditing.</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Drawing financial policies, strategic planning, and developing financial regulations and legislation.</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Performance development and staff training</li>
                         </ul>
                     </div>
                     <div x-show="tab === 'whatdo'">
@@ -254,84 +265,84 @@
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Drawing financial policies that support the achievement of the higher goals of the Palestinian National Authority</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Contribute to achieving the government's strategic goals set out in the reform and development plan</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Studying and analyzing the financial, monetary and economic conditions and evaluating tax policies and procedures in coordination with all concerned authorities</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Financial planning based on financial studies and analysis, which provides accurate cash flow forecasts</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Contribute to directing foreign aid in line with the Palestinian agenda, and through the unified treasury account</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Ensuring that the Palestinian economy and the Palestinian consumer are supplied with petroleum products with high specifications and reasonable prices</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Contribute to achieving the government's strategic goals set out in the reform and development plan</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Studying and analyzing the financial, monetary and economic conditions and evaluating tax policies and procedures in coordination with all concerned authorities</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Financial planning based on financial studies and analysis, which provides accurate cash flow forecasts</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Contribute to directing foreign aid in line with the Palestinian agenda, and through the unified treasury account</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Ensuring that the Palestinian economy and the Palestinian consumer are supplied with petroleum products with high specifications and reasonable prices</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Preparing and implementing the budget and developing the means for its preparation</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Preparing the general budget of the Palestinian National Authority and the budgets of the institutions, and developing the means for their preparation</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Enhancing the performance of the budget, and using it as a tool for monitoring and measuring performance in addition to being a tool for planning and distributing financial resources.</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Trade-off between competing demands for spending</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Implementation of the general budget of the Palestinian National Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Preparing the general budget of the Palestinian National Authority and the budgets of the institutions, and developing the means for their preparation</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Enhancing the performance of the budget, and using it as a tool for monitoring and measuring performance in addition to being a tool for planning and distributing financial resources.</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Trade-off between competing demands for spending</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Implementation of the general budget of the Palestinian National Authority</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Collection and development of revenue from taxes and customs</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Follow-up on the verification of tax revenues from customs, excise, income tax and added tax, collecting them and providing and facilitating the provision of related services to citizens by the concerned departments</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Consolidation of tax information through an accounting program and a single database to keep the accounts and records of taxpayers</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Follow-up on the verification of tax revenues from customs, excise, income tax and added tax, collecting them and providing and facilitating the provision of related services to citizens by the concerned departments</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Consolidation of tax information through an accounting program and a single database to keep the accounts and records of taxpayers</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Property tax collection on behalf of municipalities and local councils</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Follow up on the verification, development and collection of property tax and its remittance to municipalities and village councils to assist them in carrying out their duties and duties towards citizens</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Developing systems for the work of property tax departments, and facilitating the provision of services to citizens</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Follow up on the verification, development and collection of property tax and its remittance to municipalities and village councils to assist them in carrying out their duties and duties towards citizens</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Developing systems for the work of property tax departments, and facilitating the provision of services to citizens</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Managing and increasing grants to the authority</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Conducting contacts and follow-up with donors, to achieve the highest percentage of grants provided to support development projects and support the general budget.</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Directing grants to the consolidated treasury account.</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Record and publish all grants in the financial records of the Palestinian Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Conducting contacts and follow-up with donors, to achieve the highest percentage of grants provided to support development projects and support the general budget.</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Directing grants to the consolidated treasury account.</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Record and publish all grants in the financial records of the Palestinian Authority</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Computerization of work in taxes</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Work to unify all tax systems and data through a unified program PATACS used by all tax revenue departments, in order to achieve linking tax data and provide integrated information, which contributes to raising the efficiency and effectiveness of work and achieve independence from any external programs</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Work to unify all tax systems and data through a unified program PATACS used by all tax revenue departments, in order to achieve linking tax data and provide integrated information, which contributes to raising the efficiency and effectiveness of work and achieve independence from any external programs</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Cash management, bookkeeping and government debt</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing cash flows for the Palestinian National Authority</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing and regulating various sources of funding</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing the financial assets of the Palestinian National Authority</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing government debt and keeping accounts related to it</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Signing loan agreements for ministries and public institutions in the Palestinian National Authority, and managing and following up on internal and external government debt</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Regulating the banking arrangements of the Palestinian National Authority</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing bank accounts for the Palestinian National Authority</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Organizing public accounts, preparing and issuing final accounts and financial reports for revenues and expenditures</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Managing cash flows for the Palestinian National Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Managing and regulating various sources of funding</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Managing the financial assets of the Palestinian National Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Managing government debt and keeping accounts related to it</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Signing loan agreements for ministries and public institutions in the Palestinian National Authority, and managing and following up on internal and external government debt</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Regulating the banking arrangements of the Palestinian National Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Managing bank accounts for the Palestinian National Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Organizing public accounts, preparing and issuing final accounts and financial reports for revenues and expenditures</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Public Expenditure Management</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Supervising the disbursement of capital, operating and development general expenditures</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Continuing the process of reforming the financial system, developing accounting programs, linking and unifying them, and setting up a new structure for them</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Connect all responsibility centers through a unified and secure computer network</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Inventory of the financial obligations of the Palestinian National Authority</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Supervising the disbursement of capital, operating and development general expenditures</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Continuing the process of reforming the financial system, developing accounting programs, linking and unifying them, and setting up a new structure for them</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Connect all responsibility centers through a unified and secure computer network</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Inventory of the financial obligations of the Palestinian National Authority</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Government property management</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Ensuring the preservation of the properties of the Palestinian Authority, the registration of state property and its components represented in government buildings, headquarters, grants, in-kind aid, government vehicles and other government property, and computerizing the records related to them</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Ensuring the preservation of the properties of the Palestinian Authority, the registration of state property and its components represented in government buildings, headquarters, grants, in-kind aid, government vehicles and other government property, and computerizing the records related to them</li>
                             </ul>
                         </div>
                         <div class="mb-7">
                             <h4 class="text-color-one text-[18px] leading-6 font-medium font-poppins mb-6 dark:text-white">Providing government supplies and purchases</h4>
                             <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Drawing up the general policy for the management of public supplies and the means of implementing this policy</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Purchasing supplies in accordance with the law by following the principle of competition and quality in terms of goods and services</li>
-                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Save supplies and manage their surplus</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Drawing up the general policy for the management of public supplies and the means of implementing this policy</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Purchasing supplies in accordance with the law by following the principle of competition and quality in terms of goods and services</li>
+                                <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Save supplies and manage their surplus</li>
                             </ul>
                         </div>
                         <div class="text-center mt-11">
@@ -342,14 +353,14 @@
                         <h2 class="text-color-one text-[26px] lg:text-[32px] font-semibold font-nsa capitalize mb-2 dark:text-white">Strategic Goals</h2>
                         <h4 class="text-color-one text-[18px] leading-6 font-normal font-poppins mb-6 dark:text-white">Strategic objectives of the Ministry of Finance</h4>
                         <ul class="font-poppins text-[16px] md:text-[18px] leading-6 text-bcolor dark:text-white">
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Maximizing tax revenue collection, raising the level of services provided, and meeting needs</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Formulating comprehensive fiscal policy and managing public spending within a medium-term spending framework</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Develop mechanisms for preparing and implementing program and performance budgets accurately and effectively</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Adopting a comprehensive institutional legal framework for managing public money</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Managing public spending under a high-quality accounting, financial and administrative system supported by regulations, laws, and a periodic reporting system</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Organizing and controlling government purchases and property</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">Applying financial and administrative control procedures and enhancing the effective role of internal auditing</li>
-                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1">And developing the effective use and distribution of human and material resources in the Ministry</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Maximizing tax revenue collection, raising the level of services provided, and meeting needs</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Formulating comprehensive fiscal policy and managing public spending within a medium-term spending framework</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Develop mechanisms for preparing and implementing program and performance budgets accurately and effectively</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Adopting a comprehensive institutional legal framework for managing public money</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Managing public spending under a high-quality accounting, financial and administrative system supported by regulations, laws, and a periodic reporting system</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Organizing and controlling government purchases and property</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">Applying financial and administrative control procedures and enhancing the effective role of internal auditing</li>
+                            <li class="mb-5 pl-5 relative before:absolute before:content-['*'] before:ml-0.5 before:left-0 before:top-1 rtl:before:left-auto rtl:before:right-0 rtl:before:ml-0 rtl:mr-0.5 rtl:pl-0 rtl:pr-5">And developing the effective use and distribution of human and material resources in the Ministry</li>
                         </ul>
                     </div>
                 </div>

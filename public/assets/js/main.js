@@ -143,6 +143,53 @@
       delay: 10,
       time: 1000
     });
+    /*-------------------------------------------
+    js change website font
+    --------------------------------------------- */
+    var size = 1, sizes = ["small", "normal", "big"];
+    $(function() {
+      $('.js-font').on('click', function() {
+        size++;
+        if (size >= sizes.length) size = 0; 
+        var sizeClass = sizes[size];
+        console.log(size)         
+        $('body')
+              .attr('class', 'font-poppins bg-body-bg')
+              .addClass(sizeClass);
+      document.cookie = sizeClass;
+      var x = document.cookie;
+      console.log(x)
+      });
+    });
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+          }
+      console.log(c);
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+      function checkCookie() {
+        var sizech=getCookie(sizeClass);
+        if (sizech != "") {
+          alert("class addded " + sizech);
+        $('body')
+            .attr('class', 'font-poppins bg-body-bg')
+            .addClass(sizech);
+        } else {
+          sizech = prompt("error");
+          }
+      }
+
   });
 
 })(jQuery);

@@ -1345,6 +1345,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.small .secondary-btn {
+  font-size: calc(18px - 2px);
+}
+
+.big .secondary-btn {
+  font-size: calc(18px + 3px);
+}
+
 .primary-btn {
   display: inline-block;
   border-radius: 0.25rem;
@@ -1371,6 +1379,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.small .primary-btn {
+  font-size: calc(18px - 2px);
+}
+
+.big .primary-btn {
+  font-size: calc(18px + 3px);
+}
+
 .tabs-content div:not(:first-child) {
   display: none;
 }
@@ -1383,6 +1399,214 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark {
   --tw-bg-opacity: 1;
   background-color: rgb(45 57 90 / var(--tw-bg-opacity));
+}
+
+.small .text-\[16px\] {
+  font-size: calc(16px - 2px);
+}
+
+.small  .text-\[14px\] {
+  font-size: calc(14px - 2px);
+}
+
+.small .text-\[32px\] {
+  font-size: calc(32px - 2px);
+}
+
+.small .text-\[50px\] {
+  font-size: calc(50px - 2px);
+}
+
+.small .text-\[18px\] {
+  font-size: calc(18px - 2px);
+}
+
+.small .text-\[20px\] {
+  font-size: calc(20px - 2px);
+}
+
+.small .text-\[12px\] {
+  font-size: calc(12px - 2px);
+}
+
+.small .text-\[35px\] {
+  font-size: calc(35px - 2px);
+}
+
+.small .text-\[36px\] {
+  font-size: calc(36px - 2px);
+}
+
+.small .text-\[24px\] {
+  font-size: calc(24px - 2px);
+}
+
+.small .text-\[26px\] {
+  font-size: calc(26px - 2px);
+}
+
+.big .text-\[16px\] {
+  font-size: calc(16px + 3px);
+}
+
+.big  .text-\[14px\] {
+  font-size: calc(14px + 3px);
+}
+
+.big .text-\[32px\] {
+  font-size: calc(32px + 3px);
+}
+
+.big .text-\[50px\] {
+  font-size: calc(50px + 3px);
+}
+
+.big .text-\[18px\] {
+  font-size: calc(18px + 3px);
+}
+
+.big .text-\[20px\] {
+  font-size: calc(20px + 3px);
+}
+
+.big .text-\[12px\] {
+  font-size: calc(12px + 3px);
+}
+
+.big .text-\[35px\] {
+  font-size: calc(35px + 3px);
+}
+
+.big .text-\[36px\] {
+  font-size: calc(36px + 3px);
+}
+
+.big .text-\[24px\] {
+  font-size: calc(24px + 3px);
+}
+
+.big .text-\[26px\] {
+  font-size: calc(26px + 3px);
+}
+
+.big .text-\[16px\] {
+  font-size: calc(16px + 3px);
+}
+
+.big  .text-\[14px\] {
+  font-size: calc(14px + 3px);
+}
+
+.big .text-\[32px\] {
+  font-size: calc(32px + 3px);
+}
+
+.big .text-\[50px\] {
+  font-size: calc(50px + 3px);
+}
+
+.big .text-\[18px\] {
+  font-size: calc(18px + 3px);
+}
+
+.big .text-\[20px\] {
+  font-size: calc(20px + 3px);
+}
+
+.big .text-\[12px\] {
+  font-size: calc(12px + 3px);
+}
+
+.big .text-\[35px\] {
+  font-size: calc(35px + 3px);
+}
+
+.big .text-\[36px\] {
+  font-size: calc(36px + 3px);
+}
+
+.big .text-\[24px\] {
+  font-size: calc(24px + 3px);
+}
+
+.big .text-\[26px\] {
+  font-size: calc(26px + 3px);
+}
+
+@media (min-width: 1280px) {
+  .small .xl\:text-\[16px\] {
+    font-size: calc(16px - 2px);
+  }
+
+  .small .xl\:text-\[20px\] {
+    font-size: calc(20px - 2px);
+  }
+
+  .small .xl\:text-\[24px\] {
+    font-size: calc(24px - 2px);
+  }
+
+  .small .xl\:text-\[50px\] {
+    font-size: calc(50px - 2px);
+  }
+
+  .small .xl\:text-\[40px\] {
+    font-size: calc(40px - 2px);
+  }
+
+  .big .xl\:text-\[16px\] {
+    font-size: calc(16px + 3px);
+  }
+
+  .big .xl\:text-\[20px\] {
+    font-size: calc(20px + 3px);
+  }
+
+  .big  .xl\:text-\[24px\] {
+    font-size: calc(24px + 3px);
+  }
+
+  .big  .xl\:text-\[50px\] {
+    font-size: calc(50px + 3px);
+  }
+
+  .big  .xl\:text-\[40px\] {
+    font-size: calc(40px + 3px);
+  }
+}
+
+@media (min-width: 640px) {
+  .small .sm\:text-\[50px\] {
+    font-size: calc(50px - 2px);
+  }
+
+  .small .sm\:text-\[18px\] {
+    font-size: calc(18px - 2px);
+  }
+
+  .small .sm\:text-\[26px\] {
+    font-size: calc(26px - 2px);
+  }
+
+  .small .sm\:text-\[16px\] {
+    font-size: calc(16px - 2px);
+  }
+
+  .big .sm\:text-\[50px\] {
+    font-size: calc(50px + 3px);
+  }
+
+  .big .sm\:text-\[18px\] {
+    font-size: calc(18px + 3px);
+  }
+
+  .big .sm\:text-\[26px\] {
+    font-size: calc(26px + 3px);
+  }
+
+  .big .sm\:text-\[16px\] {
+    font-size: calc(16px + 3px);
+  }
 }
 
 .before\:absolute::before {
